@@ -273,7 +273,7 @@ def main():
     df = pd.read_csv("Boston Listings.csv")
     # print(df)
     #[DA7]
-    df.drop('neighbourhood_group', axis=1, inplace=True)
+    df.drop('neighbourhood', axis=1, inplace=True)
     #[DA1]
     df.dropna(inplace=True) #Removes row that have missing/NaN data from the DataFrame
     file_data = df.to_csv(index=False)  # Convert DataFrame to a CSV file
